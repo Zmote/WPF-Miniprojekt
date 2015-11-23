@@ -5,6 +5,72 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ch.hsr.wpf.gadgeothek.ui"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900">
+        Title="Gadge-o-App" Height="600" Width="900">
+    <DockPanel>
+        <DockPanel 
+            Width="250"
+            DockPanel.Dock="Left">
+            <DockPanel.Effect>
+                <DropShadowEffect
+                        BlurRadius="0"
+                        Direction="0"
+                        ShadowDepth="5"
+                        Opacity="0.1"
+                        />
+            </DockPanel.Effect>
+            <Image
+                Height="200"
+                Stretch="UniformToFill"
+                DockPanel.Dock="Top"
+                Source="img/background.jpg"/>
 
+            <StackPanel
+                Background="#84A8F5"
+                Height="Auto"
+                VerticalAlignment="Top"
+                DockPanel.Dock="Bottom">
+                
+                <Button Height="50" 
+                        Foreground="White" 
+                        Background="Transparent" 
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Content="Home"/>
+                <Button Height="50" 
+                        Foreground="White" 
+                        Background="Transparent" 
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Content="Save"/>
+                <Button Height="50" 
+                        Foreground="White" 
+                        Background="Transparent" 
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Content="Save"/>
+                <Button Height="50" 
+                        Foreground="White" 
+                        Background="Transparent" 
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Content="Save"/>
+                <Button Height="50" 
+                        Foreground="White" 
+                        Background="Transparent" 
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Content="Save"/>
+                <Button Height="50" 
+                        Foreground="White" 
+                        Background="Transparent" 
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Content="Save"/>
+            
+            </StackPanel>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Right">
+
+        </DockPanel>
+    </DockPanel>
 </Window>
