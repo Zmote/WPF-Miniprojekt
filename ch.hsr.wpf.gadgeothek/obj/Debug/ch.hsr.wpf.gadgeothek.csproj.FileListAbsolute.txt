@@ -1,0 +1,9 @@
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\bin\Debug\ch.hsr.wpf.gadgeothek.dll
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\bin\Debug\ch.hsr.wpf.gadgeothek.pdb
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\bin\Debug\RestSharp.dll
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\bin\Debug\RestSharp.xml
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\obj\Debug\ch.hsr.wpf.gadgeothek.csprojResolveAssemblyReference.cache
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\obj\Debug\ch.hsr.wpf.gadgeothek.dll
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek\obj\Debug\ch.hsr.wpf.gadgeothek.pdb

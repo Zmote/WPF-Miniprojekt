@@ -1,0 +1,14 @@
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.ui.exe.config
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.ui.exe
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.ui.pdb
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.csprojResolveAssemblyReference.cache
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\MainWindow.g.cs
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\App.g.cs
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui_MarkupCompile.cache
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui_MarkupCompile.lref
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\MainWindow.baml
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.g.resources
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.Properties.Resources.resources
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.csproj.GenerateResource.Cache
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.exe
+C:\Users\Zmote\Dropbox\HSR HS2015\MGE\Testat_2\Miniprojekt-Vorlage-WPF\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.pdb
