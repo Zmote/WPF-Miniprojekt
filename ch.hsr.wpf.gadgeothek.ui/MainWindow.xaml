@@ -6,70 +6,75 @@
         xmlns:local="clr-namespace:ch.hsr.wpf.gadgeothek.ui"
         mc:Ignorable="d"
         Title="Gadge-o-App" Height="600" Width="900">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <DockPanel>
         <DockPanel 
             Width="250"
+            Background="{StaticResource Primary}"
             DockPanel.Dock="Left">
             <DockPanel.Effect>
                 <DropShadowEffect
                         BlurRadius="0"
                         Direction="0"
                         ShadowDepth="5"
-                        Opacity="0.1"
+                        Opacity="0.4"
                         />
             </DockPanel.Effect>
-            <Image
+            <Grid 
                 Height="200"
-                Stretch="UniformToFill"
-                DockPanel.Dock="Top"
-                Source="img/background.jpg"/>
+                DockPanel.Dock="Top">
+                <Image
+                    Stretch="UniformToFill"
+                    Source="img/background.jpg"/>
+                <Viewbox Stretch="Uniform">
+                    <TextBlock
+                    Grid.Column="0"
+                    FontWeight="Bold"
+                    Background="Transparent"
+                    VerticalAlignment="Bottom"
+                    Margin="40 20"
+                    Foreground="White"
+                    FontSize="100"
+                    Text="Gadge-App">
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </Viewbox>
+            </Grid>
 
             <StackPanel
-                Background="#84A8F5"
+                Background="{StaticResource Primary}"
                 Height="Auto"
                 VerticalAlignment="Top"
                 DockPanel.Dock="Bottom">
                 
-                <Button Height="50" 
-                        Foreground="White" 
-                        Background="Transparent" 
-                        FontSize="20"
-                        FontWeight="Bold"
+                <Button Style="{StaticResource MenuButtons}"
                         Content="Home"/>
-                <Button Height="50" 
-                        Foreground="White" 
-                        Background="Transparent" 
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Content="Save"/>
-                <Button Height="50" 
-                        Foreground="White" 
-                        Background="Transparent" 
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Content="Save"/>
-                <Button Height="50" 
-                        Foreground="White" 
-                        Background="Transparent" 
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Content="Save"/>
-                <Button Height="50" 
-                        Foreground="White" 
-                        Background="Transparent" 
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Content="Save"/>
-                <Button Height="50" 
-                        Foreground="White" 
-                        Background="Transparent" 
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Content="Save"/>
-            
+                <Separator VerticalAlignment="Bottom" Margin="0" Background="{StaticResource Divider}"/>
+                <Button Style="{StaticResource MenuButtons}"
+                        Content="Gadgets"/>
+                <Separator VerticalAlignment="Bottom" Margin="0" Background="{StaticResource Divider}"/>
+                <Button Style="{StaticResource MenuButtons}"
+                        Content="Reservations"/>
+                <Separator VerticalAlignment="Bottom" Margin="0" Background="{StaticResource Divider}"/>
+                <Button Style="{StaticResource MenuButtons}"
+                        Content="Loans"/>
+                <Separator VerticalAlignment="Bottom" Margin="0" Background="{StaticResource Divider}"/>
+                <Button Style="{StaticResource MenuButtons}"
+                        Content="Libary"/>
+                <Separator VerticalAlignment="Bottom" Margin="0" Background="{StaticResource Divider}"/>
             </StackPanel>
         </DockPanel>
-        <DockPanel DockPanel.Dock="Right">
+        <DockPanel DockPanel.Dock="Right"
+                   Background="{StaticResource Icons}">
 
         </DockPanel>
     </DockPanel>

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/background.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("colors/xmlfile1.xml")]
 
 
