@@ -1,0 +1,55 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ch.hsr.wpf.gadgeothek.ui">
+    
+<!-- Colors -->
+    <SolidColorBrush x:Key="Primary" Color="#F44336"/>
+    <Color x:Key="Primary Color">#F44336</Color>
+    <SolidColorBrush x:Key="Primary Light" Color="#FFCDD2"/>
+    <Color x:Key="Primary Light Color">#FFCDD2</Color>
+    <SolidColorBrush x:Key="Primary Dark" Color="#D32F2F"/>
+    <Color x:Key="Primary Dark Color">#D32F2F</Color>
+    <SolidColorBrush x:Key="Accent" Color="#FF5722"/>
+    <Color x:Key="Accent Color">#FF5722</Color>
+    <SolidColorBrush x:Key="Primary Text" Color="#212121"/>
+    <Color x:Key="Primary Text Color">#212121</Color>
+    <SolidColorBrush x:Key="Secondary Text" Color="#727272"/>
+    <Color x:Key="Secondary Text Color">#727272</Color>
+    <SolidColorBrush x:Key="Icons" Color="#FFFFFF"/>
+    <Color x:Key="Icons Color">#FFFFFF</Color>
+    <SolidColorBrush x:Key="Divider" Color="#B6B6B6"/>
+    <Color x:Key="Divider Color">#B6B6B6</Color>
+<!-- Colors -->
+    
+    <Style x:Key="MenuButtons" TargetType="Button">
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="Foreground" Value="{StaticResource Icons}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" 
+                          VerticalAlignment="Center" HorizontalAlignment="Center" 
+                          Background="{TemplateBinding Background}">
+                        <ContentPresenter Content="{TemplateBinding Content}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource Primary Light}"/>
+                <Setter Property="Foreground" Value="{StaticResource Primary}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{StaticResource Primary Dark}"/>
+                <Setter Property="Foreground" Value="{StaticResource Icons}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    
+</ResourceDictionary>
