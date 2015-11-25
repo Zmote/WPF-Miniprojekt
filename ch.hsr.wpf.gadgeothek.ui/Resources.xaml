@@ -21,45 +21,54 @@
     <Color x:Key="Divider Color">#B6B6B6</Color>
 <!-- Colors -->
 
-<!-- Frame -->
-    <Style x:Key="KachelStyle" TargetType="Frame">
-        <Setter Property="Height" Value="160"/>
-        <Setter Property="Width" Value="170"/>
-        <Setter Property="Margin" Value="15 15"/>
-        <Setter Property="Background" Value="{StaticResource Primary}"/>
-    </Style>
-<!-- Frame -->
-
-    <!-- Buttons -->   
-    <Style x:Key="MenuButtons" TargetType="Button">
-        <Setter Property="Height" Value="50"/>
-        <Setter Property="Width" Value="250"/>
-        <Setter Property="Foreground" Value="{StaticResource Icons}"/>
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Grid Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" 
-                          VerticalAlignment="Center" HorizontalAlignment="Center" 
-                          Background="{TemplateBinding Background}">
-                        <ContentPresenter Content="{TemplateBinding Content}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{StaticResource Primary Light}"/>
-                <Setter Property="Foreground" Value="{StaticResource Primary}"/>
-            </Trigger>
-            <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="{StaticResource Primary Dark}"/>
-                <Setter Property="Foreground" Value="{StaticResource Icons}"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
+<!-- Buttons -->   
+<Style x:Key="MenuButtons" TargetType="Button">
+    <Setter Property="Height" Value="50"/>
+    <Setter Property="Width" Value="250"/>
+    <Setter Property="Foreground" Value="{StaticResource Icons}"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="Button">
+                <Grid Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" 
+                        VerticalAlignment="Center" HorizontalAlignment="Center" 
+                        Background="{TemplateBinding Background}">
+                    <ContentPresenter Content="{TemplateBinding Content}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+    <Style.Triggers>
+        <Trigger Property="IsMouseOver" Value="True">
+            <Setter Property="Background" Value="{StaticResource Primary Light}"/>
+            <Setter Property="Foreground" Value="{StaticResource Primary}"/>
+        </Trigger>
+        <Trigger Property="IsPressed" Value="True">
+            <Setter Property="Background" Value="{StaticResource Primary Dark}"/>
+            <Setter Property="Foreground" Value="{StaticResource Icons}"/>
+        </Trigger>
+    </Style.Triggers>
+</Style>
 <!-- Buttons -->
+
+<!-- Kachel Buttons -->
+<Style x:Key="KachelStyle" TargetType="Button" BasedOn="{StaticResource MenuButtons}">
+    <Setter Property="Height" Value="160"/>
+    <Setter Property="Effect">
+        <Setter.Value>
+            <DropShadowEffect
+                BlurRadius="10"
+                Opacity="0.4"
+                ShadowDepth="0"
+                />
+        </Setter.Value>
+    </Setter>
+    <Setter Property="Width" Value="170"/>
+    <Setter Property="Margin" Value="15 15"/>
+    <Setter Property="Background" Value="{StaticResource Primary}"/>
+</Style>
+<!-- Kachel Buttons -->
 
 </ResourceDictionary>
