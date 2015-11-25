@@ -20,7 +20,17 @@
     <SolidColorBrush x:Key="Divider" Color="#B6B6B6"/>
     <Color x:Key="Divider Color">#B6B6B6</Color>
 <!-- Colors -->
-    
+
+<!-- Frame -->
+    <Style x:Key="KachelStyle" TargetType="Frame">
+        <Setter Property="Height" Value="160"/>
+        <Setter Property="Width" Value="170"/>
+        <Setter Property="Margin" Value="15 15"/>
+        <Setter Property="Background" Value="{StaticResource Primary}"/>
+    </Style>
+<!-- Frame -->
+
+    <!-- Buttons -->   
     <Style x:Key="MenuButtons" TargetType="Button">
         <Setter Property="Height" Value="50"/>
         <Setter Property="Width" Value="250"/>
@@ -50,6 +60,6 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
-    
+<!-- Buttons -->
+
 </ResourceDictionary>

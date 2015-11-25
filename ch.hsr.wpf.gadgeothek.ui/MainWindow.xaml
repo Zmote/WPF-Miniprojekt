@@ -74,8 +74,20 @@
             </StackPanel>
         </DockPanel>
         <DockPanel DockPanel.Dock="Right"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
                    Background="{StaticResource Icons}">
-
+            <WrapPanel>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+                <Frame Style="{StaticResource KachelStyle}"/>
+            </WrapPanel>
         </DockPanel>
     </DockPanel>
 </Window>
