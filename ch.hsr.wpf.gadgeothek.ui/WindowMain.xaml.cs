@@ -15,6 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace ch.hsr.wpf.gadgeothek.ui
 {
@@ -30,10 +31,30 @@ namespace ch.hsr.wpf.gadgeothek.ui
         public ObservableCollection<Reservation> Reservations { get; set; }
         public ObservableCollection<Customer> Customers { get; set; }
         public ObservableCollection<string> Bibliotheken { get; set; }
+        private DispatcherTimer dispatcherTimer;
         public WindowMain()
         {
             InitializeComponent();
-            DataContext = this;
+            InitCollections();
+            InitTimer();
+            DataContext = this;  
+        }
+
+        private void InitTimer()
+        {
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Start();
+        }
+
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            RefreshDataGrid();
+        }
+
+        private void InitCollections()
+        {
             CurrentUrl = "http://mge2.dev.ifs.hsr.ch/";
             Gadgets = new ObservableCollection<Gadget>();
             Loans = new ObservableCollection<Loan>();
@@ -54,10 +75,10 @@ namespace ch.hsr.wpf.gadgeothek.ui
 
         public void RefreshDataGrid()
         {
-            Gadgets.Clear();
-            Loans.Clear();
-            Reservations.Clear();
-            Customers.Clear();
+            //Gadgets.Clear();
+            //Loans.Clear();
+            //Reservations.Clear();
+            //Customers.Clear();
             LoadGadgets();
             LoadReservations();
             LoadLoans();
@@ -69,13 +90,13 @@ namespace ch.hsr.wpf.gadgeothek.ui
             List<Gadget> mylist = alibService.GetAllGadgets();
             if(mylist.Count > Gadgets.Count)
             {
-                Gadgets.Clear();            
+                Gadgets.Clear();      
                 foreach(Gadget gadget in mylist)
                 {
                     Gadgets.Add(gadget);
                 }
             }
-
+            
         }
 
         private void LoadLoans()
@@ -169,6 +190,10 @@ namespace ch.hsr.wpf.gadgeothek.ui
         private void DeleteGadget_Click(object sender, RoutedEventArgs e)
         {
             Gadget toDelete = GadgetsData.SelectedItem as Gadget;
+            if(toDelete == null)
+            {
+                return;
+            }
             alibService.DeleteGadget(toDelete);
             RefreshDataGrid();
         }
@@ -184,5 +209,6 @@ namespace ch.hsr.wpf.gadgeothek.ui
             NewGadgetBtn.Visibility = Visibility.Visible;
             DeleteGadgetBtn.Visibility = Visibility.Visible;
         }
+       
     }
 }

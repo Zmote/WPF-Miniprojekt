@@ -69,6 +69,7 @@
         <TabControl Width="Auto">
             <TabItem Header="Gadgets" GotFocus="Gadgets_GotFocus">
                 <DataGrid
+                    IsReadOnly="True"
                     Name="GadgetsData"
                     ColumnWidth="*"
                     CanUserAddRows="false"
@@ -78,6 +79,7 @@
             </TabItem>
             <TabItem Header="Loans" GotFocus="Loans_GotFocus">
                 <DataGrid
+                    IsReadOnly="True"
                     Name="LoansData"
                     ColumnWidth="*"
                     CanUserAddRows="false"
@@ -86,6 +88,7 @@
             </TabItem>
             <TabItem Header="Reservations" GotFocus="Reservations_GotFocus">
                 <DataGrid
+                    IsReadOnly="True"
                     Name="ReservationsData"
                     ColumnWidth="*"
                     CanUserAddRows="false"
@@ -94,6 +97,7 @@
             </TabItem>
             <TabItem Header="Customers" GotFocus="Customers_GotFocus">
                 <DataGrid
+                    IsReadOnly="True"
                     Name="CustomersData"
                     ColumnWidth="*"
                     CanUserAddRows="false"
