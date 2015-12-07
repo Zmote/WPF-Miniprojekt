@@ -18,11 +18,9 @@ C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.ui.exe
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.ui.pdb
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.csprojResolveAssemblyReference.cache
-C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\MainWindow.g.cs
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\App.g.cs
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui_MarkupCompile.cache
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui_MarkupCompile.lref
-C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\MainWindow.baml
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.g.resources
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.Properties.Resources.resources
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.csproj.GenerateResource.Cache
@@ -40,3 +38,11 @@ C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\ch.hsr.wpf.gadgeothek.ui.csproj.GenerateResource.Cache
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\WindowMain.g.cs
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\WindowMain.baml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\WindowMain.g.cs
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\WindowMain.baml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.dll
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\RestSharp.dll
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.pdb
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\RestSharp.xml

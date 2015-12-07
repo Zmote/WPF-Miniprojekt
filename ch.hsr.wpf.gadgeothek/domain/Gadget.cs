@@ -10,12 +10,12 @@ namespace ch.hsr.wpf.gadgeothek.domain
 {
     public class Gadget
     {
-
-        public string InventoryNumber { get; set; }
-        public Condition Condition { get; set; }
-        public double Price { get; set; }
-        public string Manufacturer { get; set; }
         public string Name { get; set; }
+        public string Manufacturer { get; set; }
+        public double Price { get; set; }
+        public Condition Condition { get; set; }
+        public string InventoryNumber { get; set; }
+
 
 
         // parameterless constructor is needed for automatic json conversion
@@ -53,7 +53,7 @@ namespace ch.hsr.wpf.gadgeothek.domain
 
         public override string ToString()
         {
-            return FullDescription();
+            return ShortDescription();
         }
 
         public string ShortDescription()

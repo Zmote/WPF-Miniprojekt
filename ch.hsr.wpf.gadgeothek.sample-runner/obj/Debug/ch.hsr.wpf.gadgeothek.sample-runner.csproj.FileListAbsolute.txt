@@ -10,3 +10,15 @@ C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\b
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\obj\Debug\ch.hsr.wpf.gadgeothek.sample-runner.csprojResolveAssemblyReference.cache
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\obj\Debug\ch.hsr.wpf.gadgeothek.runner.exe
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\obj\Debug\ch.hsr.wpf.gadgeothek.runner.pdb
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\ch.hsr.wpf.gadgeothek.runner.exe.config
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\ch.hsr.wpf.gadgeothek.runner.exe
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\ch.hsr.wpf.gadgeothek.runner.pdb
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\ch.hsr.wpf.gadgeothek.dll
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\RestSharp.dll
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\ch.hsr.wpf.gadgeothek.pdb
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\bin\Debug\RestSharp.xml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\obj\Debug\ch.hsr.wpf.gadgeothek.sample-runner.csprojResolveAssemblyReference.cache
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\obj\Debug\ch.hsr.wpf.gadgeothek.runner.exe
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.sample-runner\obj\Debug\ch.hsr.wpf.gadgeothek.runner.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,14 +26,12 @@ namespace ch.hsr.wpf.gadgeothek.domain
         }
 
         public override bool Equals(object obj)
-        {
-            if (this == obj)
-                return true;
+        {           
+            if (this == obj) return true;
+            if (obj == null) return false;
+            Debug.WriteLine("I am obj:{0}", obj);
             var other = obj as Reservation;
-            if (obj == null)
-                return false;
-            if (Id == null)
-                return other.Id == null;
+            if (Id == null) return other.Id == null;
             return Id == other.Id;
         }
 
