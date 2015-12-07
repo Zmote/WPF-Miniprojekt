@@ -1,0 +1,44 @@
+﻿<Window x:Class="ch.hsr.wpf.gadgeothek.ui.NewGadget"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch.hsr.wpf.gadgeothek.ui"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="NewGadget" Height="550" Width="400">
+    <StackPanel
+        Margin="20"
+        >
+        <TextBlock Text="Name" Margin="10"/>
+        <TextBox Name="NameInput" Margin="10 0"></TextBox>
+        <TextBlock Text="Manufacturer" Margin="10"/>
+        <TextBox Name="ManufacturerInput" Margin="10 0"></TextBox>
+        <TextBlock Text="Price" Margin="10"/>
+        <TextBox Name="PriceInput" Margin="10 0"></TextBox>
+        <TextBlock Text="Condition" Margin="10"/>
+        <ComboBox Name ="ConditionInput" Margin="10 0" SelectedIndex="0">
+            <ComboBoxItem>New</ComboBoxItem>
+            <ComboBoxItem>Good</ComboBoxItem>
+            <ComboBoxItem>Damaged</ComboBoxItem>
+            <ComboBoxItem>Waste</ComboBoxItem>
+            <ComboBoxItem>Lost</ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="InventoryNumber" Margin="10"/>
+        <TextBox Name="INInput" Margin="10 0"></TextBox>
+        <Button
+            Click="Submit_Click"
+            Margin="10 25"
+            Height="40"
+            Content="Submit"
+            />
+        <Button
+            Click="Cancel_Click"
+            Margin="10"
+            Background="DarkRed"
+            Foreground="White"
+            Height="40"
+            Content="Cancel"
+            />
+    </StackPanel>
+</Window>

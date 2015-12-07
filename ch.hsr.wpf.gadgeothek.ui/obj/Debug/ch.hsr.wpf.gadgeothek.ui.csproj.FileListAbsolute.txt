@@ -46,3 +46,5 @@ C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\RestSh
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\ch.hsr.wpf.gadgeothek.pdb
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\bin\Debug\RestSharp.xml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\NewGadget.g.cs
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\NewGadget.baml

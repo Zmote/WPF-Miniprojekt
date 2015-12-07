@@ -23,19 +23,45 @@ namespace ch.hsr.wpf.gadgeothek.ui
     /// </summary>
     public partial class WindowMain : Window
     {
-        private LibraryAdminService alibService = new LibraryAdminService("http://mge2.dev.ifs.hsr.ch/");
+        public string CurrentUrl { get; set; }
+        public LibraryAdminService alibService = new LibraryAdminService("http://mge2.dev.ifs.hsr.ch/");
         public ObservableCollection<Gadget> Gadgets { get; set; }
         public ObservableCollection<Loan> Loans { get; set; }
         public ObservableCollection<Reservation> Reservations { get; set; }
         public ObservableCollection<Customer> Customers { get; set; }
+        public ObservableCollection<string> Bibliotheken { get; set; }
         public WindowMain()
         {
             InitializeComponent();
             DataContext = this;
+            CurrentUrl = "http://mge2.dev.ifs.hsr.ch/";
             Gadgets = new ObservableCollection<Gadget>();
             Loans = new ObservableCollection<Loan>();
             Reservations = new ObservableCollection<Reservation>();
             Customers = new ObservableCollection<Customer>();
+            Bibliotheken = new ObservableCollection<string>();
+            InitBibliotheken();
+        }
+
+        private void InitBibliotheken()
+        {
+            for(int i = 1;i <= 10;i++)
+            {
+                Bibliotheken.Add("http://mge" + i + ".dev.ifs.hsr.ch/");
+            }
+            ComboList.SelectedIndex = 1;
+        }
+
+        public void RefreshDataGrid()
+        {
+            Gadgets.Clear();
+            Loans.Clear();
+            Reservations.Clear();
+            Customers.Clear();
+            LoadGadgets();
+            LoadReservations();
+            LoadLoans();
+            LoadCustomers();
         }
 
         private void LoadGadgets()
@@ -101,22 +127,62 @@ namespace ch.hsr.wpf.gadgeothek.ui
 
         private void Reservations_GotFocus(object sender, RoutedEventArgs e)
         {
+            HideButtons();
             LoadReservations();
         }
-
+        
         private void Loans_GotFocus(object sender, RoutedEventArgs e)
         {
+            HideButtons();
             LoadLoans();
         }
 
         private void Gadgets_GotFocus(object sender, RoutedEventArgs e)
         {
+            ShowButtons();
             LoadGadgets();
         }
 
         private void Customers_GotFocus(object sender, RoutedEventArgs e)
         {
+            HideButtons();
             LoadCustomers();
+        }
+
+        private void ComboList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(ComboList.SelectedItem.ToString() == CurrentUrl)
+            {
+                return;
+            }
+            alibService.ServerUrl = ComboList.SelectedItem.ToString();
+            CurrentUrl = ComboList.SelectedItem.ToString();
+            RefreshDataGrid();
+        }
+
+        private void NewGadget_Click(object sender, RoutedEventArgs e)
+        {
+            NewGadget ng_window = new NewGadget();
+            ng_window.Show();
+        }
+
+        private void DeleteGadget_Click(object sender, RoutedEventArgs e)
+        {
+            Gadget toDelete = GadgetsData.SelectedItem as Gadget;
+            alibService.DeleteGadget(toDelete);
+            RefreshDataGrid();
+        }
+
+        private void HideButtons()
+        {
+            NewGadgetBtn.Visibility = Visibility.Hidden;
+            DeleteGadgetBtn.Visibility = Visibility.Hidden;
+        }
+
+        private void ShowButtons()
+        {
+            NewGadgetBtn.Visibility = Visibility.Visible;
+            DeleteGadgetBtn.Visibility = Visibility.Visible;
         }
     }
 }
