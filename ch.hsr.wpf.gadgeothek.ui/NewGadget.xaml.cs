@@ -34,6 +34,8 @@ namespace ch.hsr.wpf.gadgeothek.ui
             myGadget.Name = NameInput.Text;
             myGadget.Manufacturer = ManufacturerInput.Text;
             myGadget.Price = double.Parse(PriceInput.Text);
+            //there is a method of Enum -> Enum.Parse that can parse string directly to Condition Enums
+            //you wouldn't need a condition mapper
             myGadget.Condition = conditionMapper(ConditionInput.SelectedIndex);
             myGadget.InventoryNumber = INInput.Text;
             WindowMain mainWindow = (WindowMain)Application.Current.MainWindow;
