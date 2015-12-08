@@ -107,8 +107,9 @@ namespace ch.hsr.wpf.gadgeothek.ui
             {
                 return;
             }
-            alibService.DeleteGadget(toDelete);
-            RefreshDataGrid();
+            Alert myAlert = new Alert();
+            myAlert.SelectedGadget = toDelete;
+            myAlert.Show();
         }
 
         ////---------------------------------//
@@ -241,7 +242,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
         }
 
         private bool checkForUpdates()
-        {
+        {                      
             switch ((Tabs.SelectedItem as TabItem).Header.ToString())
             {
                 case "Gadgets":
@@ -258,7 +259,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
             }
         }
 
-        bool checkGadgetsForUpdate()
+        private bool checkGadgetsForUpdate()
         {
             List<Gadget> myGadgets = alibService.GetAllGadgets();
             Gadgets.ToList();
@@ -273,7 +274,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
             return false;
         }
 
-        bool checkReservationsForUpdate()
+        private bool checkReservationsForUpdate()
         {
             List<Reservation> myReservations = alibService.GetAllReservations();
             if (Reservations == null)
@@ -287,7 +288,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
             return false;
         }
 
-        bool checkLoansForUpdate()
+        private bool checkLoansForUpdate()
         {
             List<Loan> myLoans = alibService.GetAllLoans();
             if (Loans == null)
@@ -301,7 +302,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
             return false;
         }
 
-        bool checkCustomersForUpdate()
+        private bool checkCustomersForUpdate()
         {
             List<Customer> myCustomers = alibService.GetAllCustomers();
             if (Customers == null)

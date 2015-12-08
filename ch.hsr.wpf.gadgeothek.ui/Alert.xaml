@@ -1,0 +1,29 @@
+﻿<Window x:Class="ch.hsr.wpf.gadgeothek.ui.Alert"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch.hsr.wpf.gadgeothek.ui"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="Red"
+        Title="Alert" Height="280" Width="500">
+    <Grid Margin="40 20">
+        <TextBlock
+            VerticalAlignment="Top"
+            Text="Alert!"
+            Foreground="White"
+            FontWeight="Bold"
+            FontSize="40"
+            />
+        <TextBlock
+            Foreground="White"
+            VerticalAlignment="Center"
+            TextWrapping="Wrap"
+            FontSize="20"
+            Text="Sie sind dabei ein Gadget zu entfernen. Wollen Sie weiterfahren?"
+            />
+        <Button Name="Delete" Click="Delete_Click" Background="White" FontSize="15" Foreground="Black" BorderBrush="White" Content="Entfernen" Width="180" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Button>
+        <Button Name="Abbrechen" Click="Cancel_Click" Background="White" FontSize="15" Foreground="Red" BorderBrush="White" Content="Abbrechen" Width="180" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Button>
+    </Grid>
+</Window>

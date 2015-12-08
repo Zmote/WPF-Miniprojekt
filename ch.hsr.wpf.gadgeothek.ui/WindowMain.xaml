@@ -29,7 +29,7 @@
             DockPanel.Dock="Left"
             />
             
-        <Button 
+            <Button 
             Style="{StaticResource DeleteButtonStyle}"
             Click="DeleteGadget_Click"
             Name="NewGadgetBtn"

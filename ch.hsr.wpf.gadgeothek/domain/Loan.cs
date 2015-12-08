@@ -59,5 +59,10 @@ namespace ch.hsr.wpf.gadgeothek.domain
             return Id == other.Id;
         }
 
+        public override int GetHashCode()
+        {
+            return GadgetId?.GetHashCode() ?? 55;
+        }
+
     }
 }

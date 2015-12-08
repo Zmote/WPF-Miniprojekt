@@ -28,12 +28,14 @@
         <TextBox Name="INInput" Margin="10 0"></TextBox>
         <Button
             Click="Submit_Click"
+            Name="Submit"
             Margin="10 25"
             Height="40"
             Content="Submit"
             />
         <Button
             Click="Cancel_Click"
+            Name="Cancel"
             Margin="10"
             Background="DarkRed"
             Foreground="White"
