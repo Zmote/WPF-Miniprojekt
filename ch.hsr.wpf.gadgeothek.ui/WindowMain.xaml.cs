@@ -50,7 +50,26 @@ namespace ch.hsr.wpf.gadgeothek.ui
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-            RefreshDataGrid();
+            if (checkForUpdates())
+            {
+                RefreshDataGrid();
+            }
+        }
+
+        private bool checkForUpdates()
+        {
+            //TODO implement logic
+            List<Gadget> mylist = alibService.GetAllGadgets();
+            if(Gadgets == null)
+            {
+                return true;
+            }
+            Debug.WriteLine("Equals value: {0}", mylist.Equals(Gadgets));
+            if (mylist.Equals(Gadgets))
+            {
+                return false;
+            }
+            return true;
         }
 
         private void InitCollections()
@@ -75,10 +94,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
 
         public void RefreshDataGrid()
         {
-            //Gadgets.Clear();
-            //Loans.Clear();
-            //Reservations.Clear();
-            //Customers.Clear();
+            EmptyContainers();
             LoadGadgets();
             LoadReservations();
             LoadLoans();
@@ -178,7 +194,16 @@ namespace ch.hsr.wpf.gadgeothek.ui
             }
             alibService.ServerUrl = ComboList.SelectedItem.ToString();
             CurrentUrl = ComboList.SelectedItem.ToString();
+            EmptyContainers();
             RefreshDataGrid();
+        }
+
+        private void EmptyContainers()
+        {
+            Gadgets.Clear();
+            Reservations.Clear();
+            Loans.Clear();
+            Customers.Clear();
         }
 
         private void NewGadget_Click(object sender, RoutedEventArgs e)
@@ -190,7 +215,7 @@ namespace ch.hsr.wpf.gadgeothek.ui
         private void DeleteGadget_Click(object sender, RoutedEventArgs e)
         {
             Gadget toDelete = GadgetsData.SelectedItem as Gadget;
-            if(toDelete == null)
+            if (toDelete == null)
             {
                 return;
             }
