@@ -16,8 +16,7 @@ namespace ch.hsr.wpf.gadgeothek.domain
         public Condition Condition { get; set; }
         public string InventoryNumber { get; set; }
 
-
-
+        
         // parameterless constructor is needed for automatic json conversion
         public Gadget()
         {

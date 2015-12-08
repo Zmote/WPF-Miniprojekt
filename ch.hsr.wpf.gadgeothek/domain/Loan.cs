@@ -50,5 +50,14 @@ namespace ch.hsr.wpf.gadgeothek.domain
             return $"Loan {Id}: {Gadget} from {PickupDate:yyyy-MM-dd} to {ReturnDate:yyyy-MM-dd}";
         }
 
+        public override bool Equals(object obj)
+        {
+            if (this == obj) return true;
+            if (obj == null) return false;
+            var other = obj as Loan;
+            if (Id == null) return other.Id == null;
+            return Id == other.Id;
+        }
+
     }
 }

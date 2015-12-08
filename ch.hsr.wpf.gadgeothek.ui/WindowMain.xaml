@@ -10,42 +10,36 @@
         Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="600" Width="1000">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="MyResources.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <DockPanel
         Background="SkyBlue">
         
         <DockPanel DockPanel.Dock="Top">
             <DockPanel DockPanel.Dock="Top">
         <TextBlock
-            Foreground="White"
-            FontWeight="Black"
-            Height="Auto"
-            FontFamily="Segoe UI"
-            FontSize="50"
-            Margin="10 0"
-            TextAlignment="Left"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Bottom"
+            Style="{StaticResource TitleStyle}"
             Text="Admin-Tool"
             DockPanel.Dock="Left"
             />
             
         <Button 
+            Style="{StaticResource DeleteButtonStyle}"
             Click="DeleteGadget_Click"
             Name="NewGadgetBtn"
-            Width="200"
-            Margin="10"
-            HorizontalAlignment="Right"
-            Background="DarkRed"
-            Foreground="White"
             Content="Delete Gadget"
             DockPanel.Dock="Right"/>
             
             <Button
+                Style="{StaticResource ButtonStyle}"
                 Name="DeleteGadgetBtn"
                 Click="NewGadget_Click"
-                Width="200"
-                Margin="10"
-                HorizontalAlignment="Right"
                 Content="New Gadget"
                 DockPanel.Dock="Right"/>
             </DockPanel>
@@ -54,53 +48,42 @@
                 HorizontalAlignment="Right"
                 DockPanel.Dock="Bottom">
             <ComboBox 
+                Style="{StaticResource ComboBoxStyle}"
                 Text="Bibliotheken"
                 Name="ComboList"
-                Background="White"
                 SelectionChanged="ComboList_SelectionChanged"
-                Width="300"
-                Height="30"
                 DockPanel.Dock="Right"
                 ItemsSource="{Binding Path=Bibliotheken}"/>
             </DockPanel>
         </DockPanel>
 
-        
-        <TabControl Width="Auto">
+        <TabControl Width="Auto" Name="Tabs">
             <TabItem Header="Gadgets" GotFocus="Gadgets_GotFocus">
                 <DataGrid
-                    IsReadOnly="True"
+                    Style="{StaticResource GridStyle}"
                     Name="GadgetsData"
-                    ColumnWidth="*"
-                    CanUserAddRows="false"
                     ItemsSource="{Binding Path=Gadgets}">
                 </DataGrid>
                 
             </TabItem>
             <TabItem Header="Loans" GotFocus="Loans_GotFocus">
                 <DataGrid
-                    IsReadOnly="True"
+                    Style="{StaticResource GridStyle}"
                     Name="LoansData"
-                    ColumnWidth="*"
-                    CanUserAddRows="false"
                     ItemsSource="{Binding Path=Loans}">
                 </DataGrid>
             </TabItem>
             <TabItem Header="Reservations" GotFocus="Reservations_GotFocus">
                 <DataGrid
-                    IsReadOnly="True"
+                    Style="{StaticResource GridStyle}"
                     Name="ReservationsData"
-                    ColumnWidth="*"
-                    CanUserAddRows="false"
                     ItemsSource="{Binding Path=Reservations}">
                 </DataGrid>
             </TabItem>
             <TabItem Header="Customers" GotFocus="Customers_GotFocus">
                 <DataGrid
-                    IsReadOnly="True"
+                    Style="{StaticResource GridStyle}"
                     Name="CustomersData"
-                    ColumnWidth="*"
-                    CanUserAddRows="false"
                     ItemsSource="{Binding Path=Customers}">
                 </DataGrid>
             </TabItem>
