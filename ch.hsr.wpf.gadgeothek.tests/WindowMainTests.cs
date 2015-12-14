@@ -22,6 +22,7 @@ namespace ch.hsr.wpf.gadgeothek.tests
     {
         public string BaseDir => Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         public string SutPath => Path.Combine(BaseDir, $"ch.hsr.wpf.gadgeothek.ui.exe");
+        private Random Rnd = new Random();
         WindowMain mainWindow;
 
         [TestInitialize]
@@ -145,7 +146,6 @@ namespace ch.hsr.wpf.gadgeothek.tests
             app.Close();
         }
 
-        /* Doesn't work for some reason
         [TestMethod]
         public void TestNewGadgetAdded()
         {
@@ -166,7 +166,7 @@ namespace ch.hsr.wpf.gadgeothek.tests
             name.Text = "CEmilsPhone";
             manufacturer.Text = "CEmilCompany";
             price.Text = "400";
-            inventorynumber.Text = "5343u";
+            inventorynumber.Text = $"{Rnd.Next()}u{Rnd.Next()}";
             var btnSubmit = newGadget.Get<Button>("Submit");
             btnSubmit.Click();
             datagrid = window.Get<ListView>(SearchCriteria.ByAutomationId("GadgetsData"));
@@ -176,7 +176,6 @@ namespace ch.hsr.wpf.gadgeothek.tests
             window.Close();
             app.Close();
         }
-        */
 
         [TestMethod]
         public void TestServerChange()

@@ -59,3 +59,6 @@ C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\Ne
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\MyResources.baml
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\Alert.g.cs
 C:\Users\shoda_000\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\Alert.baml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\Alert.g.cs
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\Alert.baml
+C:\Users\Zmote\Desktop\WPF-Miniprojekt\ch.hsr.wpf.gadgeothek.ui\obj\Debug\MyResources.baml
