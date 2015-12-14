@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Diagnostics;
 
 namespace ch.hsr.wpf.gadgeothek.domain
 {
@@ -45,9 +46,15 @@ namespace ch.hsr.wpf.gadgeothek.domain
             var other = obj as Gadget;
             if (other == null)
                 return false;
+            return Price == other.Price &&
+                InventoryNumber == other.InventoryNumber &&
+                Name == other.Name &&
+                Manufacturer == other.Manufacturer &&
+                Condition == other.Condition; 
+            /*
             if (InventoryNumber == null)
                 return other.InventoryNumber == null;
-            return InventoryNumber == other.InventoryNumber;
+            return InventoryNumber == other.InventoryNumber;*/
         }
 
         public override string ToString()

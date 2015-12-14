@@ -123,29 +123,7 @@ namespace ch.hsr.wpf.gadgeothek.tests
             window.Close();
             app.Close();
         }
-                
-        [TestMethod]
-        public void TestDeletionOfGadget()
-        {
-            var app = Application.Launch(SutPath);
-            var window = app.GetWindows().First();
-            var comboList = window.Get<ComboBox>("ComboList");
-            comboList.Items.Select(5);
-            var btn = window.Get<Button>(SearchCriteria.ByText("Delete Gadget"));
-            var datagrid = window.Get<ListView>(SearchCriteria.ByAutomationId("GadgetsData"));
-            var before = datagrid.Rows.Count;
-            datagrid.Select(0);
-            btn.Click();
-            var alert = app.GetWindow("Alert");
-            var btnDelete = alert.Get<Button>("Delete");
-            btnDelete.Click();
-            datagrid = window.Get<ListView>(SearchCriteria.ByAutomationId("GadgetsData"));
-            var after = datagrid.Rows.Count;
-            Assert.IsTrue(before > after);
-            window.Close();
-            app.Close();
-        }
-
+               
         [TestMethod]
         public void TestNewGadgetAdded()
         {
@@ -173,6 +151,28 @@ namespace ch.hsr.wpf.gadgeothek.tests
             var after = datagrid.Rows.Count;
             Assert.AreNotEqual(before, after);
             Assert.IsTrue(before < after);
+            window.Close();
+            app.Close();
+        }
+
+        [TestMethod]
+        public void TestDeletionOfGadget()
+        {
+            var app = Application.Launch(SutPath);
+            var window = app.GetWindows().First();
+            var comboList = window.Get<ComboBox>("ComboList");
+            comboList.Items.Select(6);
+            var btn = window.Get<Button>(SearchCriteria.ByText("Delete Gadget"));
+            var datagrid = window.Get<ListView>(SearchCriteria.ByAutomationId("GadgetsData"));
+            var before = datagrid.Rows.Count;
+            datagrid.Select(0);
+            btn.Click();
+            var alert = app.GetWindow("Alert");
+            var btnDelete = alert.Get<Button>("Delete");
+            btnDelete.Click();
+            datagrid = window.Get<ListView>(SearchCriteria.ByAutomationId("GadgetsData"));
+            var after = datagrid.Rows.Count;
+            Assert.IsTrue(before > after);
             window.Close();
             app.Close();
         }
